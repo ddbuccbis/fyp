@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="16dp"
+    >
+
+        <TextView
+            android:id="@+id/tvCompName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Company Name"
+            tools:ignore="HardcodedText"
+            android:layout_marginTop="16dp"
+            />
+
+        <EditText
+            android:id="@+id/editTextCompName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Company Name"
+            android:inputType="text"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/tvCompName"/>
+
+
+        <TextView
+            android:id="@+id/tvLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/location"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/editTextCompName"/>
+
+        <EditText
+            android:id="@+id/editTextLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Location"
+            android:inputType="text"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/tvLocation"/>
+
+        <TextView
+            android:id="@+id/tvCompType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Company Type"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/editTextLocation"/>
+
+        <EditText
+            android:id="@+id/editTextCompType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Company Type"
+            android:inputType="text"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/tvCompType"/>
+
+        <TextView
+            android:id="@+id/tvCompPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone Number"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/editTextCompType"/>
+
+        <EditText
+            android:id="@+id/editTextCompPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Phone Number"
+            android:inputType="phone"
+            android:layout_below="@+id/tvCompPhone"/>
+
+
+        <Button
+            android:id="@+id/buttonRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register Company"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/editTextCompPhone"/>
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Already Registered? \n Click Here to Login"
+        android:textAlignment="center"
+        android:layout_below="@+id/buttonRegister"
+        android:layout_marginTop="8dp"/>
+
+
+</RelativeLayout>
